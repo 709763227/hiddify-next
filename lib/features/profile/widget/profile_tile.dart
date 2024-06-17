@@ -387,7 +387,7 @@ class ProfileSubscriptionInfo extends HookConsumerWidget {
           textDirection: TextDirection.ltr,
           child: Flexible(
             child: Text(
-              subInfo.total > 10 * 1099511627776 //10TB
+              subInfo.total > 100 * 1099511627776 //10TB
                   ? "∞ GiB"
                   : subInfo.consumption.sizeOf(subInfo.total),
               semanticsLabel:
